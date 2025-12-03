@@ -8,7 +8,11 @@ a1 = list()
 while True:
     pessoas["nome"] = str(input(("NOME: "))).title().strip()
     pessoas["idade"] = int(input("IDADE: "))
-    pessoas["sexo"] = str(input("SEXO [F/M]: ")).upper().strip()
+    while True:
+        pessoas["sexo"] = str(input("SEXO [F/M]: ")).upper().strip()[0]
+        if pessoas["sexo"] in "MF":
+            break
+        print("!ERRO! \n DIGITE APENAS M OU F")
     lista.append(pessoas.copy())
     flag = str(input("QUER CONTINUAR: ")).upper().strip()
     if flag[0] == "N":
