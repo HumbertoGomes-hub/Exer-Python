@@ -13,6 +13,7 @@ for k,v in stats.items():
     print(k,":",v)
 
 stats["gols por partida"] = golspartida.copy()
+
 print()
 
 for k,v in stats["gols por partida"].items():
