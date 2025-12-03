@@ -3,6 +3,7 @@ pessoas = dict()
 med_calculo = list()
 mulheres = list()
 idade_acima = list()
+a1 = list()
 
 while True:
     pessoas["nome"] = str(input(("NOME: "))).title().strip()
@@ -16,13 +17,18 @@ print()
 
 quant_pessoas = len(lista)
 
-for c,i in enumerate(lista):
+for c in range(len(lista)):
     med_calculo.append(lista[c]["idade"])
-    med_idade = sum(med_calculo)/len(med_calculo)
     if lista[c]["sexo"] == "F":
         mulheres.append(lista[c]["nome"])
+med_idade = sum(med_calculo)/len(med_calculo)
+for c,i in enumerate(lista):
     if lista[c]["idade"] > med_idade:
         idade_acima.append(lista[c]["nome"])
+        idade_acima.append(lista[c]["idade"])
+        idade_acima.append(lista[c]["sexo"])
+        a1.append(idade_acima.copy())
+        idade_acima.clear()
 
 print(f"NUMERO DE PESSOAS CADASTRADAS = {quant_pessoas}\n MEDIA DE IDADE = {med_idade:.2f}")
 print()
@@ -31,8 +37,8 @@ for i in mulheres:
     print(i)
 print()
 print("PESSOAS ACIMDA DA MEDIA DE IDADE")
-for i in idade_acima:
-    print(i)
+for c,i in enumerate(a1):
+    print(f"NOME = {a1[c][0]} SEXO = {a1[c][2]} IDADE = {a1[c][1]}")
     
     
     
