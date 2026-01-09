@@ -18,9 +18,11 @@ while True:
 print()
 for k,v in enumerate(lista1):
     print("ID  JOGADOR    GOLS    TOTAL")
-    print(f"{k}  {lista1[k]['nome']}        {gols[k]}        {lista1[k]['total de gols']}")
+    print(f"{k}  {lista1[k]['nome']}        {gols[k]}  {lista1[k]['total de gols']}")
 print()
 print()
+while True:
+    a1 = int(input("QUER OS DADOS DE QUAL JOGADOR[999 STOP]: "))
     
     
     
