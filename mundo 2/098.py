@@ -4,15 +4,15 @@ def contador(i , f, p): #i: inicio f: fim p: passo
         if p == 0:
             p = 1
         for c in range(i,f+1,p):
-            sleep(0.4)
+            #sleep(0.4)
             print(c, end=" ", flush=True)
         print("FIM!")
     elif f < i:
         if p == 0:
-            p = -1
+            p = 1
         p = -p
         for c in range(i,f-1,p):
-            sleep(0.4)
+            #sleep(0.4)
             print(c, end=" ", flush=True)
             
         print("FIM!")
