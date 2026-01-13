@@ -3,14 +3,14 @@ def contador(i , f, p): #i: inicio f: fim p: passo
     if f > i:
         for c in range(i,f+1,p):
             sleep(0.4)
-            print(c, end=" ")
-        print()
+            print(c, end=" ", flush=True)
+        print("FIM!")
     elif f < i:
         for c in range(i,f-1,p):
             sleep(0.4)
-            print(c, end=" ")
+            print(c, end=" ", flush=True)
             
-        print()
+        print("FIM!")
     
     
 def linha():
