@@ -1,11 +1,16 @@
 def contador(i , f, p): #i: inicio f: fim p: passo
     from time import sleep
     if f > i:
+        if p == 0:
+            p = 1
         for c in range(i,f+1,p):
             sleep(0.4)
             print(c, end=" ", flush=True)
         print("FIM!")
     elif f < i:
+        if p == 0:
+            p = -1
+        p = -p
         for c in range(i,f-1,p):
             sleep(0.4)
             print(c, end=" ", flush=True)
@@ -16,7 +21,7 @@ def contador(i , f, p): #i: inicio f: fim p: passo
 def linha():
     print("=" * 20)        
 
-        
+
 linha()   
 print("CONTAGEM 1 A 10 DE 1 EM 1")
 contador(1,10,1)
