@@ -10,9 +10,13 @@ def maior(*valores):
         sleep(0.5)
         print(c, end=" ", flush=True)
     
-    print(" são os valores", end="")
-    print(f" Maior valor {max(valores)}")
+    print("SÃO OS VALORES", end="")
+    print(f" TOTAL DE VALORES [{len(valores)}] MAIOR VALOR [{max(valores)}]")
         
     
     
     
+maior(1,2,3,4,5,6)
+maior(17,62,98)
+maior(9,3,2,5)
+maior(21,17)
