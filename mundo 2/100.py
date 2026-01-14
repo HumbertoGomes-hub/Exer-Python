@@ -14,7 +14,8 @@ def somaPar():
     print(f"SOMANDO OS VALORES {numeros} A SOMA DOS PARES SÃO {sum(soma)}")
             
             
-
+          
+            
 numeros = list()
 sorteia()
 somaPar()
