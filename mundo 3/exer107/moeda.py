@@ -16,8 +16,3 @@ def dobro(v):
 def metade(v):
     met = v / 2
     return met
-
-
-
-
-    
