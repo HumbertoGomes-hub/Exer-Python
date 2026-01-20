@@ -21,6 +21,7 @@ def fatorial(num=0,show=False):
         
        
 print(fatorial(5, True))
+help(fatorial)
         
         
     
