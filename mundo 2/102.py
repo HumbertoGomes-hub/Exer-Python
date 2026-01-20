@@ -1,4 +1,10 @@
 def fatorial(num=0,show=False):
+    """ 
+    -> Calcula o Fatorial de um numero.
+    !param num: O numero a ser calculado.
+    !param show: (opcional) Mostrar ou não a conta.
+    !return: O valor fatorial de um numero num.
+    """
     fat = num
     if show == True:
         
@@ -23,7 +29,7 @@ def fatorial(num=0,show=False):
         
     
 print("-" * 30)   
-print(fatorial(5, True))
+help(fatorial)
         
         
     
