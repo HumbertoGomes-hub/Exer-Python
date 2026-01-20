@@ -7,7 +7,7 @@ cores = {"verde": "\033[1;42m", "azul": "\033[1;44m",
 
 
 def ajuda(msg):
-    titulo(f" ACESSANDO MANUAL DO COMANDO {funcao} ", cor=cores["azul"])
+    titulo(f" ACESSANDO MANUAL DO COMANDO \"{funcao}\" ", cor=cores["azul"])
     sleep(1)
     
     print(cores["amarelo"])
@@ -26,7 +26,6 @@ def titulo(msg2, cor=cores["remover"]):
     print(f"  {msg2}")
     print("~" * tam, end="")
     print(cores["remover"])
-    
     
     
     
