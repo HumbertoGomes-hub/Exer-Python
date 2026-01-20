@@ -5,31 +5,22 @@ def fatorial(num=0,show=False):
     !param show: (opcional) Mostrar ou não a conta.
     !return: O valor fatorial de um numero num.
     """
-    fat = num
-    if show == True:
-        
-        for c in range(num,0,-1):
-            if c < 5:
-                fat *= c
-
+    fat = 1
+    print("-" * 30)  
+    for c in range(num,0,-1):
+        fat *= c
+        if show == True:
             print(f"{c} ",end="")
             if c == 1:
                 print(f"= ", end="")
                 break
             print("x ", end="")
-        return fat
-            
-    else:
-        for c in range(num,0,-1):
-            if c < 5:
-                fat *= c
-        return fat
+    return fat
 
         
         
-    
-print("-" * 30)   
-help(fatorial)
+       
+print(fatorial(5, True))
         
         
     
