@@ -13,7 +13,7 @@ def notas(*valor, sit=False):
     if sit:
         if dic_notas["Media"] >= 7:
             dic_notas["Situação:"] = "boa"
-        elif dic_notas["Media"] >= 5 and dic_notas["Media"] <= 6:
+        elif dic_notas["Media"] >= 5:
             dic_notas["Situação:"] = "razoavel"
         else:
             dic_notas["Situação:"] = "ruim"
@@ -22,7 +22,7 @@ def notas(*valor, sit=False):
         
 
     
-resp = notas(3,6,sit=True)
+resp = notas(6,6,sit=True)
 print(resp)
 help(notas)
     
