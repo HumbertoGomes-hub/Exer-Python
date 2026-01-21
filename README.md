@@ -20,7 +20,7 @@ O objetivo principal é fixar **conceitos fundamentais**, praticar lógica de pr
 
 * Funções e modularização
 
-* Tratamento de erros e exceções (__*try, except, else, finally*__)
+* Tratamento de erros e exceções (__*`try`, `except`, `else`, `finally`*__)
 
 * Exercícios e desafios propostos ao longo do curso
 
