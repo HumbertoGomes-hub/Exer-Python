@@ -1,4 +1,6 @@
-# Exercícios  de Python  <img width="269" height="326" alt="python-logo-only" src="https://github.com/user-attachments/assets/7eb0ed61-fa6a-444f-b26b-b2c26cf39347" />
+<img width="269" height="326" alt="python-logo-only" src="https://github.com/user-attachments/assets/7eb0ed61-fa6a-444f-b26b-b2c26cf39347" />
+
+# Exercícios  de Python  
 
 ---
 Este repositório contém meus exercícios práticos em **Python**, desenvolvidos ao longo do meu processo de aprendizagem da linguagem.
