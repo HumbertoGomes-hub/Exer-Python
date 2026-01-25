@@ -7,7 +7,7 @@ def LeiaInt():
             print("\033[0;31mO USUARIO NAO DIGITOU O NUMERO.\033[m")
             return 0
         try:
-            int(num)
+            num = int(num)
         except:
             print("\033[0;31mERRO! Digite um numero inteiro valido\033[m")
         
