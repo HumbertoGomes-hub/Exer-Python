@@ -15,7 +15,6 @@ else:
     modulos.CriaArq(arquivo)
     print("ARQUIVO CRIADO!")
 
-
 if resp == 1:
     interface.titulo("PESSOAS CADASTRADAS")
     modulos.lerArq(arquivo)

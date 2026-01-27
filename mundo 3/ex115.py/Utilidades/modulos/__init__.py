@@ -14,30 +14,14 @@ def lerArq(arq):
     except:
         print("ERRO AO LER ARQUIVO!")
     else:
-        
         for linha in a1:
             dado = linha.split(";")
             dado[1] = dado[1].replace("\n","")
             a2 ="|"
             print(f"{dado[0]:<10} {a2.center(10)}   {dado[1]:>3} ANOS")
-       
-            
-        
-            
-
-
-
-
-
     finally:
         
         a1.close()
-
-    
-    
-
-
-
 
 
 
