@@ -1,5 +1,6 @@
 from Utilidades import interface
 from Utilidades import modulos
+from time import sleep
 
 interface.titulo("CADASTRO DE PESSOAS")
 interface.menu()
@@ -16,10 +17,17 @@ else:
 
 
 if resp == 1:
-    modulos.lerArq()
+    interface.titulo("PESSOAS CADASTRADAS")
+    modulos.lerArq(arquivo)
 
-if resp == 2:
+elif resp == 2:
+    interface.titulo("CADASTRAR PESSOAS")
     modulos.cadastrar(arquivo)
+
+else:
+    interface.titulo("SAINDO....")
+    sleep(0.5)
+    print("Bye!")
 
 
 

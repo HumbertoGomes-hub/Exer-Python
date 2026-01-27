@@ -1,0 +1,3 @@
+Pessoa1;87
+Pessoa2;17
+Pessoa3;26
